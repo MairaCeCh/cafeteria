@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="style/style.css" />
     <title>Cafe de la Geisha</title>
   </head>
   <body>
     <header class="header">
       <div class="menu container">
-        <a href="#" class="logo">logo</a>
+        <a href="#" class="logo"><img src="images/logo-p.png" alt="" /></a>
         <input type="checkbox" id="menu" />
         <label for="menu">
-          <img src="images/logo.png" class="menu-icono" alt="" />
+          <span class="material-symbols-outlined"> menu </span>
         </label>
         <nav class="navbar">
           <ul>
@@ -188,7 +192,9 @@
 
       <div class="personal-group">
         <div class="personal-1">
-          <img src="images/preparando-cafe.jpg" alt="" />
+          <div class="personal-div">
+            <img src="images/preparando-cafe.jpg" alt="" />
+          </div>
           <h3>Baristas</h3>
           <p>
             Seleccionamos a los mejores baristas se dedican a preparar y servir
@@ -199,7 +205,9 @@
         </div>
 
         <div class="personal-1">
-          <img src="images/postres.jpg" alt="" />
+          <div class="personal-div">
+            <img src="images/postres.jpg" alt="" />
+          </div>
           <h3>Pasteleros</h3>
           <p>
             Nuestros pasteleros se encargan de crear exquisitos postres,
@@ -210,7 +218,9 @@
         </div>
 
         <div class="personal-1">
-          <img src="images/personal.jpg" alt="" />
+          <div class="personal-div">
+            <img src="images/personal.jpg" alt="" />
+          </div>
           <h3>Mozos</h3>
           <p>
             Nuestros mozos ofrecen un servicio atento y amable, tomando pedidos,
@@ -241,7 +251,7 @@
             rows="10"
             placeholder="Texto"
           ></textarea>
-          <input type="submit" value="Enviar" class="btn-1" />
+          <input type="submit" value="Enviar" class="btn-1 enviar" />
         </form>
       </div>
       <div class="footer-txt">
@@ -251,7 +261,6 @@
         </p>
         <img src="images/face.png" alt="" />
         <img src="images/ins.png" alt="" />
-        <img src="images/twitter.png" alt="" />
       </div>
     </footer>
   </body>

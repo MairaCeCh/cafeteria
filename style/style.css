@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Playfair+Display&family=Ysabeau:wght@1;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;300;700&family=Playfair+Display&family=Ysabeau:wght@1;300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;300;700&family=Playfair+Display&family=Ysabeau:wght@1;300&display=swap'); */
 /* font-family: 'Dancing Script', cursive; */
-
+/*mas oscuro 865439
+oscuro CA965C
+claro EEC373
+mas claro F4DFBA
+*/
 *{
    margin: 0;
    padding: 0;
@@ -10,22 +14,33 @@
    list-style: none;
 }
 body{
-    background: #C68B59;
-    background-color: rgb(7, 1, 42);
     font-family: 'Montserrat', sans-serif;
+    background-color: #876445;
+  
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 .header{
-    background-image: url(https://fondosmil.com/fondo/15528.jpg);
+    background: black;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/598/508/1011/coffee-spoon-cup-bag-wallpaper-preview.jpg);
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 70vh;
     display: flex;
     align-items: center;
+    position: relative;
+}
+.header::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .73);
 }
 .menu{
     position: absolute;
@@ -37,15 +52,19 @@ body{
     justify-content: space-between;
     z-index: 1000;
 }
-.menu-icono{
-    width: 25px;
-}
 .logo{
     font-size: 24px;
-    color: chocolate;
+    color: #EEC373;
     font-weight: 700;
     text-transform: uppercase;
 }
+.logo img{
+    margin-left: 35px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+
 .menu .navbar ul li {
     position: relative;
     float: left;
@@ -53,16 +72,18 @@ body{
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color: chocolate;
+    color: #CA965C;
     display: block;
 }
 .menu .navbar ul li a:hover{
-    color: #8FC1D4;
+    color: #F4DFBA;
+    transition: 1s;
+    background: transparent;
 }
 #menu{
     display: none;
 }
-.meni-icono{
+.menu-icono{
     width: 25px;
 }
 .menu label{
@@ -72,57 +93,66 @@ body{
 .header-txt{
     text-align: center;
     margin-bottom: 45px;
+    position: relative;
 }
 .header-txt h1, span, h3 {
     font-size: 110px;
-    letter-spacing: 5px;
+    position: relative;
+    letter-spacing: 3px;
     text-transform: uppercase;
     /* font-family: 'Dancing Script', cursive; */
-    color: #8FC1D4;
+    color: #865439;
     margin-bottom: 15px;
 }
 .header-txt span{
     font-size: 25px;
+    position: relative;
 }
 .header-txt p {
-    
-    font-size: 20px;
-    color: #C68B59;
+    color: #F4DFBA;
     padding: 0 250px;
     margin: 25px 0;
+    position: relative;
+    font-size: 22px;
 }
 .btn-1{
     display: inline-block;
     padding: 11px 25px;
-    background-color: #8FC1D4;
-    color: chocolate;
+    background-color: #C68B59;
+    color: #F4DFBA;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 20px;
     font-family: 'Dancing Script', cursive;
     margin: 25px 0;
-    border: 0;
+  
 }
 .btn-1:hover {
-    background-color: chocolate;
+    background-color: #F4DFBA;
+    color: #C68B59;
+    transition: 1s;
+  
 }
 .header-dir{
     display: flex;
+    position: relative;
     justify-content: space-between;
     text-align: center;
     margin-top: 20px;
 }
 .dir h3{
     font-size: 18px;
+    color: #865439;
 }
 .dir p {
     font-size: 22px;
-    color: chocolate;
+    color: #EEC373;
     text-transform: uppercase;
 }
 
 h1{
-    color: #8FC1D4;
+    color: #865439;
+    margin-top: 60px;
 }
 .welcome {
     display: flex;
@@ -132,28 +162,29 @@ h1{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    width: 30%;
 }
 .welcome-2 {
-    width: 50%;
+    width: 70%;
     padding: 150px 250px 150px 100px;
-    background-color: chocolate;
+    background-color: #865439;
 }
 h2{
     font-size: 70px;
     line-height: 100px;
-    color: #8FC1D4;
+    color: #EEC373;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
 }
 p {
     font-size: 16px;
-    color: chocolate;
+    color: #F4DFBA;
     margin: 25px 0;
 }
 .b1{
-    color: rgb(39, 117, 31);
+    color: #F4DFBA;
+    font-size: 18px;
 }
 .services {
     padding: 100px 0;
@@ -165,11 +196,13 @@ p {
     align-items: center;
 }
 hr{
-    border: 1px solid red;
+    border: 1px solid #EEC373;
     width: 80px;
+    margin: 0 auto;
 }
 .services-txt p{
     padding: 50px 150px;
+    
 }
 .services-group{
     display: flex;
@@ -177,7 +210,7 @@ hr{
     margin: 45px 0;
 }
 .services-1{
-    background-color: #FCDEC0;
+    background-color: #CA965C;
     padding: 35px 25px;
     margin: 0 10px;
     border-radius: 15px;
@@ -188,11 +221,12 @@ hr{
 }
 .services-1 h3{
     font-size: 25px;
-    color: red;
+    color: #865439;
 }
 .services-1 a{
-    color: red;
-    font-size: 16px;
+    text-decoration: underline;
+    color: #8FC1D4;
+    font-size: 18px;
 }
 .prices{
     display: flex;
@@ -200,7 +234,7 @@ hr{
 .prices-1{
     width: 50%;
     padding: 150px 250px 150px 100px;
-    background-color: #C68B59;
+    background-color: #865439;
 }
 table{
     margin: 50px 0;
@@ -211,11 +245,11 @@ table{
 tr{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #865439;
     margin-bottom: 20px;
 }
 th{
-    color: chocolate;
+    color: #EEC373;
     padding-bottom:15px;
 }
 td{
@@ -232,6 +266,7 @@ td{
 .personal{
      padding: 100px 0;
      text-align: center;
+    
 }
 .personal-txt{
     display: flex;
@@ -240,6 +275,12 @@ td{
     text-align: center;
     margin-bottom: 25px;
 }
+.personal-div{
+    width: 250px;
+    height: 180px;
+
+    margin: 0 auto;
+}
 .personal-group{
     display: flex;
     justify-content: space-between;
@@ -247,33 +288,44 @@ td{
 }
 .personal-1{
     text-align: center;
+    
+   
 }
 .personal-1 img{
-    width: 250px;
+    width: 100%;
+    height: 90%;
+    border: solid 1px black;
     border-radius: 15px;
     margin-bottom: 25px;
+    
 }
 .personal-1 h3{
     font-size: 22px;
+    color: #EEC373;
+    
 }
 .personal-1 p {
     padding: 0 50px;
+    
 }
 .personal-1 a{
-    color: red;
+    color: #EEC373;
 }
 .footer-bg{
-    background-image: url(/images/footer.jpg);
+    background-image: url(https://images5.alphacoders.com/130/1308377.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     padding: 100px 0;
+    position: relative;
 }
+
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 .campo-1{
     margin-bottom: 15px;
@@ -282,12 +334,19 @@ form{
     margin: 5px;
     padding: 25px 15px;
     width: 250px;
-    background-color: #FCDEC0;
-    border: #C68B59;
+    background-color: transparent;
     outline: none;
+    border: solid 1px black;
     border-radius: 15px;
     color: white;
     font-size: 14px;
+}
+.campo::placeholder{
+    color: #F4DFBA;
+    
+}
+.enviar{
+    border: none;
 }
 textarea{
     width: 520px !important;
@@ -295,11 +354,17 @@ textarea{
 .footer-txt{
     text-align: center;
     padding: 10px;
-    background-color: #8FC1D4;
+    background-color: #CA965C;
+}
+.iconos{
+    width: 60px;
+    height: 60px;  
 }
 .footer-txt img{
+    cursor: pointer;
     width: 40px;
     height: 40px;
+    margin: 20px;
 }
 @media(max-width:991px) {
     .menu{
@@ -309,99 +374,107 @@ textarea{
         display: initial;
     }
     .menu .navbar {
-    position: absolute;
-    top: 100%;
-    left:0;
-    right: 0;
-    background-color: red;
-    display: none;
-}
-.menu .navbar ul li {
-    width: 100%;
-}
-#menu:checked ~ .navbar{
-    display: initial;
-}
-.header {
-    min-height: 0vh;
-}
-.header-content {
-    padding: 80px 30px 50px 30px;
-}
-.header-txt{
-    margin-bottom: 15px;
-}
-.header-txt h1{
-    font-size: 90px;
-}
-.header-txt p{
-    padding: 0;
-    margin: 15px 0;
-}
-.header-dir{
-    flex-direction: column;
-}
-.dir p {
-    font-size: 18px;
-}
-
-.welcome{
-    flex-direction: column;
-}
-.welcome-1{
-    display: none;
-}
-.welcome-2{
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-}
-h2{
-   font-size: 70px;
-   line-height: 80px; 
-}
-p{
-    margin: 15px 0;
-}
-.services{
-    padding: 30px;
-    
-}
-.services-txt p {
-    padding: 0;
-}
-.services-group{
-    flex-direction: column;
-    margin: 0;
-}
-.services-1{
-    margin: 0 0 20px 0;
-}
-.prices {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-}
-table {
-    margin: 20px 0 0 0;
-}
-.prices-2 {
-    display: none;
-}
-.personal{
-    padding: 30px;
-} 
-.personal-group{
-    flex-direction: column;
-    margin-bottom: 0;
-}
-.personal-1{
-    margin-bottom: 25px;
-}
-.footer-bg{
-    padding: 30px;
-}
-textarea {
-    width: 250px !important;
-}
+        position: absolute;
+        top: 100%;
+        left:0;
+        right: 0;
+        background-color: #865439;
+        display: none;
     }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+        position: relative;
+    }
+    .header-content {
+        padding: 80px 30px 50px 30px;
+        position: relative;
+    }
+    .header-txt{
+        margin-bottom: 15px;
+        position: relative;
+    }
+    .header-txt h1{
+        position: relative;
+        font-size: 90px;
+    }
+    .header-txt p{
+        padding: 0;
+        position: relative;
+        margin: 15px 0;
+    }
+    .header-dir{
+        flex-direction: column;
+        position: relative;
+    }
+    .dir p {
+        font-size: 18px;
+    }
+    .welcome{
+        flex-direction: column;
+    }
+    .welcome-1{
+        display: none;
+    }
+    .welcome-2{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    h2{
+        font-size: 70px;
+        line-height: 80px; 
+    }
+    p{
+        margin: 15px 0;
+    }
+    .services{
+        padding: 30px;
+    
+    }
+    .services-txt p {
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin: 0;
+    }
+    .services-1{
+        margin: 0 0 20px 0;
+    }
+    .prices{
+        flex-direction: column;
+    }
+    .prices-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    table {
+        margin: 25px 0 0 0;
+    }
+    .prices-2 {
+        display: none;
+    }
+    .personal{
+        padding: 30px;
+    } 
+    .personal-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .personal-1{
+         margin-bottom: 25px;
+    }
+    .footer-bg{
+        padding: 30px;
+    }
+    textarea {
+        width: 250px !important;
+    }
+}
