@@ -20,14 +20,15 @@ body{
 }
 .header{
     background: black;
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/598/508/1011/coffee-spoon-cup-bag-wallpaper-preview.jpg);
-    background-position: center ;
+    background-image: url(/images/fondo-header.jpg);
+    /* background-image: url(https://img.freepik.com/fotos-premium/ramas-cerezos-flor-flores-rosas-fondo-negro_900706-2962.jpg?w=2000); */
+    background-position: center center ;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 70vh;
     display: flex;
     align-items: center;
-    position: relative;
+    
 }
 .header::before{
     position: absolute;
@@ -36,14 +37,21 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #484646b9;
+    /* background-color: #484646b9; */
+}
+.item{
+    scroll-margin-top: 8ex;
+}
+html{
+    scroll-behavior: smooth;
 }
 .menu{
     width: 100%;
     /* margin: 0; */
     /* height: 100px; */
-    background: #282828;
-    position: absolute;
+    background: #884A39;
+    position: fixed;
+    border: 1px solid #282828;
     top: 0;
     left: 0;
     right: 0;
@@ -60,8 +68,8 @@ body{
 }
 .logo img{
     margin-left: 35px;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 50px;
     position: relative;
 }
 
@@ -73,7 +81,7 @@ body{
     font-size: 18px;
     font-weight: bold;
     padding: 20px;
-    color: #C38154;
+    color: #282828;
     display: block;
 }
 .menu .navbar ul li a:hover{
@@ -138,6 +146,7 @@ body{
   
 }
 .header-dir{
+    background: black;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -155,7 +164,7 @@ body{
 }
 
 h1{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .welcome {
     display: flex;
@@ -276,7 +285,7 @@ td{
     color: red;
 }
 .prices-2{
-    background-image: url(/images/fondo-3.jpg);
+    background-image: url(/images/cafes.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -290,7 +299,7 @@ td{
     
 }
 .personal-h2{
-    color: #865439;
+    color: #884A39;
 }
 .personal-txt{
     display: flex;
@@ -300,9 +309,8 @@ td{
     margin-bottom: 25px;
 }
 .personal-div{
-    width: 250px;
-    height: 180px;
-
+    width: 310px;
+    height: 240px;
     margin: 0 auto;
 }
 .personal-group{
