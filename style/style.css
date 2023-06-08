@@ -15,7 +15,7 @@ mas claro F4DFBA
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #876445;
+    background-color: #C38154;
   
 }
 .container{
@@ -40,9 +40,13 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .73);
+    background-color: #484646b9;
 }
 .menu{
+    width: 100%;
+    /* margin: 0; */
+    /* height: 100px; */
+    background: #884A39;
     position: absolute;
     top: 0;
     left: 0;
@@ -71,13 +75,14 @@ body{
 }
 .menu .navbar ul li a {
     font-size: 18px;
+    font-weight: bold;
     padding: 20px;
-    color: #CA965C;
+    color: #C38154;
     display: block;
 }
 .menu .navbar ul li a:hover{
-    color: #F4DFBA;
-    transition: 1s;
+    color: #FFC26F;
+    transition: 2s;
     background: transparent;
 }
 #menu{
@@ -101,7 +106,7 @@ body{
     letter-spacing: 3px;
     text-transform: uppercase;
     /* font-family: 'Dancing Script', cursive; */
-    color: #865439;
+    color: #C38154;
     margin-bottom: 15px;
 }
 .header-txt span{
@@ -109,8 +114,10 @@ body{
     position: relative;
 }
 .header-txt p {
-    color: #F4DFBA;
+    color: #EEC373;
     padding: 0 250px;
+    letter-spacing: 3px;
+    font-weight: normal;
     margin: 25px 0;
     position: relative;
     font-size: 22px;
@@ -118,8 +125,8 @@ body{
 .btn-1{
     display: inline-block;
     padding: 11px 25px;
-    background-color: #C68B59;
-    color: #F4DFBA;
+    background-color: #884A39;
+    color: #FFC26F;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 20px;
@@ -128,9 +135,9 @@ body{
   
 }
 .btn-1:hover {
-    background-color: #F4DFBA;
-    color: #C68B59;
-    transition: 1s;
+    background-color: #FFC26F;
+    color: #884A39;
+    transition: 3s;
   
 }
 .header-dir{
@@ -142,7 +149,7 @@ body{
 }
 .dir h3{
     font-size: 18px;
-    color: #865439;
+    color: #884A39;
 }
 .dir p {
     font-size: 22px;
@@ -151,8 +158,7 @@ body{
 }
 
 h1{
-    color: #865439;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 .welcome {
     display: flex;
@@ -167,28 +173,35 @@ h1{
 .welcome-2 {
     width: 70%;
     padding: 150px 250px 150px 100px;
-    background-color: #865439;
+    background-color: #884A39;
 }
 h2{
     font-size: 70px;
     line-height: 100px;
-    color: #EEC373;
+    color: #FFC26F;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
 }
 p {
     font-size: 16px;
-    color: #F4DFBA;
+    color: #EEC373;
     margin: 25px 0;
 }
 .b1{
-    color: #F4DFBA;
+    color: #EEC373;
     font-size: 18px;
 }
 .services {
     padding: 100px 0;
     text-align: center;
+}
+.services-h2{
+   color: #884A39;
+}
+.services-p{
+    color: #EEC373;
+    font-size: 18px;
 }
 .services-txt {
     display: flex;
@@ -196,13 +209,16 @@ p {
     align-items: center;
 }
 hr{
-    border: 1px solid #EEC373;
+    border: 1px solid #884A39;
     width: 80px;
     margin: 0 auto;
 }
 .services-txt p{
     padding: 50px 150px;
-    
+     
+}
+.p-services{
+    color: #865439;
 }
 .services-group{
     display: flex;
@@ -210,8 +226,9 @@ hr{
     margin: 45px 0;
 }
 .services-1{
-    background-color: #CA965C;
+    background-color: #FFC26F;
     padding: 35px 25px;
+    width: 30%;
     margin: 0 10px;
     border-radius: 15px;
 }
@@ -221,18 +238,18 @@ hr{
 }
 .services-1 h3{
     font-size: 25px;
-    color: #865439;
+    color: #884A39;
 }
 .services-1 a{
     text-decoration: underline;
-    color: #8FC1D4;
+    color: #884A39;
     font-size: 18px;
 }
 .prices{
     display: flex;
 }
 .prices-1{
-    width: 50%;
+    width: 40%;
     padding: 150px 250px 150px 100px;
     background-color: #865439;
 }
@@ -245,7 +262,7 @@ table{
 tr{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #865439;
+    border-bottom: 1px solid #F9E0BB;
     margin-bottom: 20px;
 }
 th{
@@ -260,13 +277,17 @@ td{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    width: 60%;
 }
 
 .personal{
      padding: 100px 0;
      text-align: center;
+     background: #C38154;
     
+}
+.personal-h2{
+    color: #865439;
 }
 .personal-txt{
     display: flex;
@@ -288,20 +309,20 @@ td{
 }
 .personal-1{
     text-align: center;
+    margin: 15px;
     
-   
 }
 .personal-1 img{
     width: 100%;
     height: 90%;
-    border: solid 1px black;
+    border: solid 1px #865439;
     border-radius: 15px;
     margin-bottom: 25px;
     
 }
 .personal-1 h3{
     font-size: 22px;
-    color: #EEC373;
+    color: #884A39;
     
 }
 .personal-1 p {
@@ -309,7 +330,7 @@ td{
     
 }
 .personal-1 a{
-    color: #EEC373;
+    color: #F9E0BB;
 }
 .footer-bg{
     background-image: url(https://images5.alphacoders.com/130/1308377.jpeg);
@@ -341,6 +362,9 @@ form{
     color: white;
     font-size: 14px;
 }
+.campo:hover{
+    background: #876445;
+}
 .campo::placeholder{
     color: #F4DFBA;
     
@@ -354,7 +378,7 @@ textarea{
 .footer-txt{
     text-align: center;
     padding: 10px;
-    background-color: #CA965C;
+    background-color: #865439;
 }
 .iconos{
     width: 60px;
